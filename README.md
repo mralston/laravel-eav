@@ -26,7 +26,7 @@ The EAV implementations which I've seen thus far have a separate database record
 
 My concept is to place all of the EAV data into a JSON field in a single database record, which can be fetched just once per model instance.
 
-Inspiration for using a [JSON field](https://www.youtube.com/watch?v=QZBxgX2OWbI) came from Aaron Francis @ PlanetScale, so kudos to him. https://aaronfrancis.com/
+Inspiration for using a [JSON field](https://www.youtube.com/watch?v=QZBxgX2OWbI) came from [Aaron Francis](https://aaronfrancis.com/) @ PlanetScale, so kudos to him. 
 
 ## Installation
 
