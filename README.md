@@ -18,15 +18,16 @@ Entity–attribute–value model (EAV) is a data model to encode, in a space-eff
 
 - Yes, there are another packages which already provide similar functionality.
 - Yes, EAV is sometimes considered an anti-pattern due to performance issues.
+- Yes, this might be considered reinventing the NoSQL wheel.
 - Yes, I did it anyway. 🤷🏻‍♂️
 
-Truth be told, this started as a proof-of-concept based on an idea I had, aimed at improving a messy pre-existi g implementation in several projects which I am involved in maintaining.
+Truth be told, this started as a proof-of-concept based on an idea I had, aimed at improving a messy pre-existing implementation in several projects which I am involved in maintaining.
 
 The EAV implementations which I've seen thus far have a separate database record for each EAV attribute. I believe that the bulk of the performance problems comes from the large amounts of additional database traffic as a result.
 
 My concept is to place all of the EAV data into a JSON field in a single database record, which can be fetched just once per model instance.
 
-Inspiration for using a [JSON field](https://www.youtube.com/watch?v=QZBxgX2OWbI) came from [Aaron Francis](https://aaronfrancis.com/) @ PlanetScale, so kudos to him. 
+Inspiration for using a [JSON field](https://www.youtube.com/watch?v=QZBxgX2OWbI) came from [Aaron Francis](https://aaronfrancis.com/) @ PlanetScale, so kudos to him. Also thanks to Aaron for the get-out-of-jail-free card when it comes to the 'you should just use a NoSQL database' argument.
 
 ## Installation
 
