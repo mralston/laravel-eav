@@ -143,4 +143,4 @@ Please [e-mail security vulnerabilities directly to me](mailto:matt@mralston.co.
 
 ## Licence
 
-PDF is open-sourced software licenced under the [MIT license](LICENSE.md).
+Laravel EAV is open-sourced software licenced under the [MIT license](LICENSE.md).
